@@ -1,0 +1,249 @@
+{
+  "textures": [
+    // textureId[0] - texturePath[1] - transparentColor[2]
+	[ 0, "Resources\\Textures\\0. Bbox.png"                           , 0             ],
+	[ 1, "Resources\\Textures\\1. Warning.png"                        , 0             ],
+	[ 2, "Resources\\Textures\\2. Keycodefont.png"                    , [0  ,0  ,0  ] ],
+	[ 3, "Resources\\Textures\\3. Interlace.png"                      , [230,230,230] ],
+	[ 4, "Resources\\Textures\\4. TileMapCharleston.png"              , 0             ],
+	[ 5, "Resources\\Textures\\5. TileMapBossCharlestonLight.png"     , 0             ],
+	[ 6, "Resources\\Textures\\6. TileMapBossCharlestonDark.png"      , 0             ],
+	[ 7, "Resources\\Textures\\7. TileMapPittsburghDark.png"          , 0             ],
+	[ 8, "Resources\\Textures\\8. TileMapPittsburghLight.png"         , 0             ],
+	[ 9, "Resources\\Textures\\9. TileMapRedAlert.png"                , 0             ],
+	[10, "Resources\\Textures\\10. Captain.png"                       , [  0,183,107] ],
+	[11, "Resources\\Textures\\11. Enemies.png"                       , [  0,116,145] ],
+	[12, "Resources\\Textures\\12. Wizard.png"                        , [  0,166, 81] ],
+	[13, "Resources\\Textures\\13. Dynamite.png"                      , [  0, 91,127] ]
+],
+
+  "sprites": [
+	// spriteId[0] - textureId[1] - left[2] - top[3] - spriteWidth[4] - spriteHeight[5] - count[6] - padding[7]
+	[           0,             0,        0,       0,               0,                0,         1,           0 ], // invisible
+	[           1,            11,      248,      13,              24,               43,         1,           0 ], // enemygun-stand
+	[           2,            11,      280,      16,              24,               40,         3,           8 ], // enemygun-walking
+	[           3,            11,      184,      24,              24,               32,         1,           0 ], // enemygun-before-explode
+	[           4,            11,      216,      29,              24,               27,         1,           0 ], // enemygun-sitting
+	[           5,            11,      169,      33,               6,                6,         1,           0 ], // enemyGunBullet
+	[           6,            11,      281,      66,              23,               46,         1,           0 ], // enemyrocket-stand
+	[           7,            11,      281,      66,              23,               46,         3,           9 ], // enemyrocket-walking
+	[           8,            11,      216,      72,              24,               40,         1,           0 ], // enemyrocket-before-explode
+	[           9,            11,      248,      81,              24,               31,         1,           0 ], // enemyrocket-sitting
+	[          10,            11,      171,      68,              15,               13,         2,           8 ], // enemyrocketBullet-Horizontal
+	[          11,            11,      168,      96,              12,               13,         2,          12 ], // enemyrocketBullet-Cross
+	[          12,            10,      245,     266,              30,               28,         2,           2 ], // explode
+
+	[          13,            10,       96,     306,               8,               13,         2,            8], // SmallPowerStone
+	[          14,            10,      131,     304,              11,               16,         2,           13], // BigPowerStone
+	[          15,            10,      176,     306,               8,               14,         1,            0], // FivePoint
+	[          16,            10,      204,     274,               8,               14,         1,            0], // OneUp
+	[          17,            10,      193,     313,               7,                7,         1,            0], // SmallEnergy
+	[          18,            10,      208,     311,               8,                9,         1,            0], // Big Energy
+	[          19,            10,      242,     306,              12,               12,         2,           12], // KeyKrystal
+	[          20,            10,      288,     304,              29,               16,         1,            0], // ExitSign
+
+	[          21,            10,      224,     308,               8,                8,         1,            0], // CaptainHealth
+	[          22,            10,      336,     304,              16,               16,         1,            0], // CapsuleIdle
+	[          23,            10,      360,     304,              16,               16,         1,            0], // CapsuleOpenning
+	[          24,            10,      336,     320,              16,               16,         1,            0], // CapsuleIdle_NoBackground
+	[          25,            10,      360,     320,              16,               16,         1,            0], // CapsuleOpenning_NoBackground
+	
+	[          26,            10,      336,     256,              32,               48,         1,            0], // Door_DarkIdle
+	[          27,            10,      368,     256,              32,               48,         4,            0], // Door_DarkOpenning
+	[          28,            10,      336,     176,              32,               48,         1,            0], // Door_LightIdle
+	[          29,            10,      368,     176,              32,               48,         4,            0], // Door_LightOpenning
+
+	[          30,            10,      124,     272,              15,               16,         1,            0], // Shield_Side
+	[          31,            10,      107,     272,               7,               16,         1,            0], // Shield_Straight
+	[          32,            10,      173,     282,              23,                6,         1,            0], // Shield_Down
+	[          33,            10,      148,     274,              16,                9,         1,            0], // Shield_Up
+	
+	[          35,            11,      256,     368,              32,               16,         1,            0], // BreakableLedge_Intact
+	[          36,            11,      176,     384,              64,               16,         1,            0], // BreakableLedge_Seperated
+	[          37,            11,      296,     368,              32,               16,         1,            0], // MovingLedge
+	[          38,            11,      337,     368,               6,               10,         2,            0], // FireTail_Vertical
+	[          39,            11,      352,     372,               8,                8,         2,            0], // FireTail_Horizontal
+	
+	
+	[          40,            11,      240,     384,              16,               16,         1,            0], // Bunker_Idle_0
+	[          41,            11,      256,     384,              16,               16,         1,            0], // Bunker_Idle_1
+	[          42,            11,      272,     384,              16,               16,         1,            0], // Bunker_Idle_2
+	[          43,            11,      288,     384,              16,               16,         1,            0], // Bunker_Idle_3
+	[          44,            11,      304,     384,              16,               16,         1,            0], // Bunker_Idle_4
+	[          45,            11,      320,     384,              16,               16,         1,            0], // Bunker_Idle_5
+	[          46,            11,      336,     384,              16,               16,         1,            0], // Bunker_Idle_6
+	[          47,            11,      352,     384,              16,               16,         1,            0], // Bunker_Idle_7
+	[          48,            11,      240,     384,              16,               16,         8,            0], // Bunker_Spin
+	[          49,            11,      373,     389,               6,                6,         1,            0], // Bullet_Bunker
+	
+	
+	[          50,            12,      144,      19,              31,               45,         3,            1], //EnemyWizard_Walking,
+	[          51,            12,      280,      16,              23,               48,         1,            0], //EnemyWizard_Stand,
+	[          52,            12,      107,      16,              29,               41,         1,            0], //EnemyWizard_BeforeDefeated,
+	[          53,            12,       59,      37,              36,               27,         2,          -87], //EnemyWizard_Defeated,
+	[          54,            12,      248,      15,              23,               49,         1,            0], //EnemyWizard_DefeatedCaptain,
+	[          55,            12,      235,     130,              29,               51,         1,            0], //EnemyWizard_FlyUp,
+	[          56,            12,      195,     130,              29,               51,         1,            0], //EnemyWizard_FlyDown,
+	[          57,            12,      155,     134,              29,               47,         2,          -69], //EnemyWizard_ShootWhenFly,
+	[          58,            12,       30,      76,              36,               44,         3,            7], //EnemyWizard_ShootBullet,
+	[          59,            12,      256,      76,              40,               44,         3,          -88], //EnemyWizard_ShootBulletFire,
+	[          60,            12,      195,     130,              29,               51,         1,           12], //EnemyWizard_Flying,
+
+	[          61,            12,       88,     140,              16,                8,         1,            0], //BulletFireEnemyWizard_Horizontal,
+	[          62,            12,       49,     136,               7,               16,         1,            0], //BulletFireEnemyWizard_Vertical,
+	[          63,            12,       56,     162,               8,                5,         1,            0], //BulletEnemyWizard_Horizontal,
+	[          64,            12,       72,     161,               8,                6,         1,            0], //BulletEnemyWizard_SemiCross,
+	[          65,            12,       88,     160,               7,                8,         1,            0], //BulletEnemyWizard_Cross,
+	
+	[          66,            11,      120,     131,              28,               37,         2,          228], //EnemyFly_Fly
+	[          77,            11,       35,      75,              26,               37,         2,          320], //EnemyFly_Shoot
+	
+	[          67,            11,      186,     192,               7,               15,         2,            0], //BulletEnemyFly_Up,
+	[          68,            11,      172,     192,               7,               15,         2,            0], //BulletEnemyFly_Down,
+	[          69,            11,      200,     197,              15,                7,         2,            0], //BulletEnemyFly_Hor,
+	[          70,            11,      231,     195,              13,               13,         2,            0], //BulletEnemyFly_CrossUp,
+	[          71,            11,      257,     191,              13,               13,         2,            0], //BulletEnemyFly_CrossDown,
+	
+	[          72,            11,      114,     224,               8,               16,         1,            0], //ElectricBat_Sleep
+	[          73,            11,      134,     224,              23,               16,         2,            6], //ElectricBat_StartFly
+	[          74,            11,      163,     224,              23,               16,         2,          -52], //ElectricBat_EndFly
+	[          75,            11,      218,     224,              38,               16,         2,            0], //ElectricBat_FlyAttack
+	[          76,            11,      226,     224,              24,               16,         2,          -56], //ElectricBat_Fly
+
+	[         100,            10,      357,      11,              22,               45,         1,            0], //Captain_Standing,
+	[         101,            10,      228,      13,              24,               43,         4,            8], //Captain_Walking,
+	[         103,            10,      196,      13,              24,               43,         1,            0], //Captain_LookUp
+	[         105,            10,      217,      71,              38,               41,         2,            2], //Captain_Punching
+	[         106,            10,      298,      73,              43,               39,         2,           13], //Captain_Throw
+	[         102,            10,      134,      15,              22,               38,         1,            0], //Captain_Jump
+	[         107,            10,      134,      15,              22,               38,         1,            0], //Captain_Falling
+	[         108,            10,       20,      23,              40,               25,         1,            0], //Captain_JumpKick
+	[         104,            10,      164,      28,              24,               28,         1,            0], //Captain_Sitting
+	[         109,            10,      128,      85,              38,               27,         2,            2], //Captain_SitPunch
+	[         110,            10,       38,      79,              39,               29,         2,            1], //Captain_Smash
+	[         111,            10,       10,      53,              23,               23,         4,            1], //Captain_Spin
+	[         112,            10,       32,     120,              20,               56,         3,            4], //Captain_Climb
+	[         113,            10,      169,     192,              29,               38,         1,            0], //Captain_Injure
+	[         114,            10,       88,     209,              26,               23,         1,            0], //Captain_Die
+	[         115,            10,       89,     244,              18,               12,         2,           13], //Captain_Swimming
+	[         116,            10,      151,     237,              32,               25,         5,            1], //Captain_FallToWater
+	[         117,            10,      330,     248,              16,                7,         3,            4], //Captain_InWater
+	[         118,            10,        9,      83,              21,               27,         1,            0], //Captain_CoverLow
+	[         119,            10,      208,     187,              32,               45,         2,            8], //Captain_ElectricShock
+
+	[         200,            13,      314,      24,              28,               46,         1,            0], //DynamiteNapalm_FallFromTheSky
+	[         201,            13,      202,      29,              30,               43,         1,            0], //DynamiteNapalm_Standing
+	[         202,            13,      355,      33,              28,               39,         2,           14], //DynamiteNapalm_Intact_Running
+	[         203,            13,      166,      24,              32,               48,         2,          -78], //DynamiteNapalm_ThrowDynamite
+	[         204,            13,      266,      29,              38,               43,         1,            0], //DynamiteNapalm_Intact_Shooting
+
+	[         205,            13,      143,      80,              30,               48,         2,            1], //DynamiteNapalm_Intact_Injure
+
+	[         206,            13,      348,      93,              24,               35,         1,            0], //DynamiteNapalm_Headless_Standing
+	[         207,            13,      220,      87,              35,               41,         3,            1], //DynamiteNapalm_Headless_Running_Shooting
+	[         210,            13,      242,      43,              14,                7,         1,            0], //DynamiteNapalm_Fire_Bullet
+	[         211,            13,       48,      42,              22,               14,         1,            0], //DynamiteNapalm_Bullet_Dynamite
+	
+	[         220,            11,      134,     324,              16,               44,         6,            1],  //ElectricTrap_Active
+
+	[        1001,            11,      248,      413,              24,               43,         1,           0 ], // enemygun-stand
+	[        1002,            11,      280,      416,              24,               40,         3,           8 ], // enemygun-walking
+	[        1003,            11,      184,      424,              24,               32,         1,           0 ], // enemygun-before-explode
+	[        1004,            11,      216,      429,              24,               27,         1,           0 ], // enemygun-sitting
+
+	[        1006,            11,      281,      466,              23,               46,         1,           0 ], // enemyrocket-stand
+	[        1007,            11,      281,      466,              23,               46,         3,           9 ], // enemyrocket-walking
+	[        1008,            11,      216,      472,              24,               40,         1,           0 ], // enemyrocket-before-explode
+	[        1009,            11,      248,      481,              24,               31,         1,           0 ] // enemyrocket-sitting
+
+
+  ],
+
+  "sounds": [
+	// soundId[0] - waveFileLink[1]
+	[ 0, "Resources\\Sounds\\0. Greeting.wav"],
+	[ 1, "Resources\\Sounds\\1. Cursor.wav"],
+	[ 2, "Resources\\Sounds\\2. Theme of Captain America.wav"],
+	[ 3, "Resources\\Sounds\\3. Boss Battle.wav"],
+	[ 4, "Resources\\Sounds\\4. Red Alert.wav"],
+	[ 5, "Resources\\Sounds\\5. Ambush.wav"],
+	[ 6, "Resources\\Sounds\\6. Death.wav"],
+	[ 7, "Resources\\Sounds\\7.. Item Key Krystal.wav"],
+	[ 8, "Resources\\Sounds\\8.. Item Energy.wav"],
+	[ 9, "Resources\\Sounds\\9.. Item Normal.wav"],
+	[10, "Resources\\Sounds\\10.. Bullet Normal.wav"],
+	[11, "Resources\\Sounds\\11.. Bullet Lazer.wav"],
+	[12, "Resources\\Sounds\\12.. Explosion.wav"],
+	[13, "Resources\\Sounds\\13.. Shield Throw.wav"],
+	[14, "Resources\\Sounds\\14.. Shield Collide.wav"],
+	[15, "Resources\\Sounds\\15.. Punch.wav"],
+	[16, "Resources\\Sounds\\16.. Tackle.wav"],
+	[17, "Resources\\Sounds\\17.. HighJump.wav"],
+	[18, "Resources\\Sounds\\18.. Grounding.wav"],
+	[19, "Resources\\Sounds\\19.. Water.wav"],
+	[20, "Resources\\Sounds\\20.. Spinning.wav"]
+  ],
+
+   "keycodefonts": [ // keyCode[0] - left[1] - top[2] - right[3] - bottom[4]
+	[ 65,   0,   0,   8,   8], // A
+	[ 66,   8,   0,  16,   8], // B
+	[ 67,  16,   0,  24,   8], // C
+	[ 68,  24,   0,  32,   8], // D
+	[ 69,  32,   0,  40,   8], // E
+	[ 70,  40,   0,  48,   8], // F
+
+	[ 71,   0,   8,   8,  16], // G
+	[ 72,   8,   8,  16,  16], // H
+	[ 73,  16,   8,  24,  16], // I
+	[ 74,  24,   8,  32,  16], // J
+	[ 75,  32,   8,  40,  16], // K
+	[ 76,  40,   8,  48,  16], // L
+
+	[ 77,   0,  16,   8,  24], // M
+	[ 78,   8,  16,  16,  24], // N
+	[ 79,  16,  16,  24,  24], // O
+	[ 80,  24,  16,  32,  24], // P
+	[ 81,  32,  16,  40,  24], // Q
+	[ 82,  40,  16,  48,  24], // R
+
+	[ 83,   0,  24,   8,  32], // S
+	[ 84,   8,  24,  16,  32], // T
+	[ 85,  16,  24,  24,  32], // U
+	[ 86,  24,  24,  32,  32], // V
+	[ 87,  32,  24,  40,  32], // W
+	[ 88,  40,  24,  48,  32], // X
+
+	[ 89,   0,  32,   8,  40], // Y
+	[ 90,   8,  32,  16,  40], // Z
+	[ 48,  16,  32,  24,  40], // 0
+	[ 49,  24,  32,  32,  40], // 1
+	[ 50,  32,  32,  40,  40], // 2
+	[ 51,  40,  32,  48,  40], // 3
+
+	[ 52,   0,  40,   8,  48], // 4
+	[ 53,   8,  40,  16,  48], // 5
+	[ 54,  16,  40,  24,  48], // 6
+	[ 55,  24,  40,  32,  48], // 7
+	[ 56,  32,  40,  40,  48], // 8
+	[ 57,  40,  40,  48,  48], // 9
+
+	[ 37,   0,  48,   8,  56], // VK_LEFT
+	[ 38,   8,  48,  16,  56], // VK_UP
+	[ 39,  16,  48,  24,  56], // VK_RIGHT
+	[ 40,  24,  48,  32,  56], // VK_DOWN
+	[ 13,  32,  48,  40,  56], // VK_RETURN
+	[ 32,  40,  48,  48,  56], // VK_SPACE
+
+	[ 96,   0,  56,   8,  64], // VK_NUMPAD0
+	[ 97,   8,  56,  16,  64], // VK_NUMPAD1
+	[ 98,  16,  56,  24,  64], // VK_NUMPAD2
+	[ 99,  24,  56,  32,  64], // VK_NUMPAD3
+	[100,  32,  56,  40,  64], // VK_NUMPAD4
+	[101,  40,  56,  48,  64], // VK_NUMPAD5
+
+	[102,   0,  64,   8,  72], // VK_NUMPAD6
+	[103,   8,  64,  16,  72], // VK_NUMPAD7
+	[104,  16,  64,  24,  72], // VK_NUMPAD8
+	[105,  24,  64,  32,  72]  // VK_NUMPAD9
+   ]
+}

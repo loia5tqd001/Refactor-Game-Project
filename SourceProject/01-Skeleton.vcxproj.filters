@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{c211fdac-2b18-4784-bf77-270bec639b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development">
+      <UniqueIdentifier>{e552e2e3-ef9f-4ec3-b2e0-d32668f39cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\_ThirdParty">
+      <UniqueIdentifier>{24cb7110-3619-4716-bba6-03607fca019e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{3f3090f4-650c-41ee-937f-6438b1dcb3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\_MyUtils">
+      <UniqueIdentifier>{ee005e60-a311-4fef-a228-f27e3a9e3ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Scenes">
+      <UniqueIdentifier>{bec1d83e-1091-44ea-8466-fe1e747997e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects">
+      <UniqueIdentifier>{97cf505e-1d03-4a1a-8c53-b1e5a7ef5296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Manager">
+      <UniqueIdentifier>{91d35982-a90a-4d1c-9b6b-c9f02a5235d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Scenes\Playable Scenes">
+      <UniqueIdentifier>{1e57cac5-baaf-4ec4-9ab3-8be1ea161ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Scenes\Extra Scenes">
+      <UniqueIdentifier>{924b2fad-b38e-49bb-8b4d-b0b332d8b5e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Base Objects">
+      <UniqueIdentifier>{87b46ef5-c3d6-43c5-a66d-27918b3079c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Game Managers">
+      <UniqueIdentifier>{aaf61b66-f7e6-4011-ade9-c1274136799a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Resource Components">
+      <UniqueIdentifier>{f411ea0c-66f5-4c3c-a94d-bc40b0869dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Resource Managers">
+      <UniqueIdentifier>{c7481584-ff8b-4a74-83c5-b5775ef315b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Enemies">
+      <UniqueIdentifier>{f1762551-4c01-42fd-b537-dde1d2937676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Bullets">
+      <UniqueIdentifier>{edd10a0f-29fe-409c-b332-b60c3f9f1267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Misc.">
+      <UniqueIdentifier>{4f2287f9-979c-4d94-9efd-776b4b8a904b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Blocks">
+      <UniqueIdentifier>{d12c7ebb-6ba6-4d24-ad27-5a0749a460fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Captain">
+      <UniqueIdentifier>{b27bc3c2-1f5b-4742-b75e-9085145db342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Captain\H">
+      <UniqueIdentifier>{d3dd87c9-7368-4868-8602-783c52a9af2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Captain\D">
+      <UniqueIdentifier>{02ce4bf4-1662-496e-ae69-a93962148c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development\Objects\Captain\L">
+      <UniqueIdentifier>{52790d83-62af-4029-ae69-98b0eb44c3a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Resource Files">
+      <UniqueIdentifier>{84b6430e-d159-43e3-b293-8c45a3b28555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\JsonCpp\jsoncpp.cpp">
+      <Filter>Framework\_ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Development\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Development\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dependencies\DirectX SDK\Sound Util\dsutil.cpp">
+      <Filter>Framework\_ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Development\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Framework\Resource Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Framework\Resource Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Framework\Resource Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Sounds.cpp">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyCodeFonts.cpp">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="VisibleObject.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="InvisibleObject.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDraw.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GreetingScene.cpp">
+      <Filter>Development\Scenes\Extra Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BossCharlestonScene.cpp">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="CharlestonScene.cpp">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="PittsburghScene.cpp">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="RedAlertScene.cpp">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyGun.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyRocket.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEnemyGun.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEnemyRocket.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitSign.cpp">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainHealth.cpp">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbushTrigger.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakableLedge.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingLedge.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFactory.cpp">
+      <Filter>Development\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Capsule.cpp">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Framework\Game Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletFireEnemyWizard.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyWizard.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEnemyWizard.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractScene.cpp">
+      <Filter>Framework\Base Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Captain.cpp">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClCompile>
+    <ClCompile Include="Shield.cpp">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainState.cpp">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFly.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainClimbing.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainCoverLow.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainCoverTop.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainDead.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainFallToWater.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainInjured.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainInWater.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainPunching.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainSitPunching.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainSpinning.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainSitting.cpp">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainStanding.cpp">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainTackle.cpp">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainWalking.cpp">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainThrowing.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainSwimming.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainFalling.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainKicking.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainJumping.cpp">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainFalling.cpp">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEnemyFly.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamiteNapalm.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEnemyFly.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="Bunker.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletBunker.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletFireDynamiteNapalm.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletDynamite.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricBat.cpp">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingLedgeUpdater.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptainElectricShock.cpp">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricTrap.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugOut.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTimer.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="MyException.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="RectF.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Development\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.h">
+      <Filter>Development\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Development\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Development\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sounds.h">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Framework\Resource Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Framework\Resource Components</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyCodeFonts.h">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Framework\Resource Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Framework\Resource Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="InvisibleObject.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="VisibleObject.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDraw.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GreetingScene.h">
+      <Filter>Development\Scenes\Extra Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BossCharlestonScene.h">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="CharlestonScene.h">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="PittsburghScene.h">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="RedAlertScene.h">
+      <Filter>Development\Scenes\Playable Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Counter.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyGun.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyRocket.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEnemyRocket.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEnemyGun.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="Capsule.h">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitSign.h">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainHealth.h">
+      <Filter>Development\Objects\Misc.</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbushTrigger.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingLedge.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakableLedge.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>Development\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Framework\Game Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Framework\_MyUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletFireEnemyWizard.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEnemyWizard.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractScene.h">
+      <Filter>Framework\Base Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainState.h">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClInclude>
+    <ClInclude Include="Captain.h">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFly.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainClimbing.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainCoverLow.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainCoverTop.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainDead.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainFallToWater.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainInjured.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainInWater.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainPunching.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainSitPunching.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainSpinning.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainSitting.h">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainStanding.h">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainTackle.h">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainWalking.h">
+      <Filter>Development\Objects\Captain\L</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainThrowing.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainSwimming.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainFalling.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainKicking.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainJumping.h">
+      <Filter>Development\Objects\Captain\H</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainFalling.h">
+      <Filter>Development\Objects\Captain</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEnemyFly.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamiteNapalm.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEnemyFly.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Main\Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bunker.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletBunker.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletFireDynamiteNapalm.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletDynamite.h">
+      <Filter>Development\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyWizard.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectricBat.h">
+      <Filter>Development\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="MovingLedgeUpdater.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptainElectricShock.h">
+      <Filter>Development\Objects\Captain\D</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectricTrap.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Development\Objects\Blocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameProject.rc">
+      <Filter>Main\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Textures\uit.ico">
+      <Filter>Main\Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
